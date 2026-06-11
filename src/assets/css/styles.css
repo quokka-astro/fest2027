@@ -281,7 +281,7 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.6fr);
   gap: 3rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .split h2,
@@ -294,12 +294,42 @@ h3 {
   font-size: 1.06rem;
 }
 
-.venue-panel {
+.venue-panel,
+.funder-panel {
   padding: 1.4rem;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper-strong);
   box-shadow: var(--shadow);
+}
+
+.funder-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+}
+
+.funder-panel dl {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.funder-panel div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.funder-panel img.funder-logo {
+  max-height: 120px;
+  max-width: 100%;
+  width: auto;
+  display: block;
 }
 
 .venue-panel dl,
